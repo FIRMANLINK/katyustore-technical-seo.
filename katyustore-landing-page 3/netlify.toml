@@ -1,0 +1,11 @@
+# Deploy via Git (Netlify) otomatis menyesuaikan sitemap, robots, dan canonical.
+[build]
+  command = "node generate-seo.cjs"
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"

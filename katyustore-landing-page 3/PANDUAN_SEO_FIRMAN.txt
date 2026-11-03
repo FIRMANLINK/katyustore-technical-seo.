@@ -1,0 +1,67 @@
+TECHNICAL SEO & INDEXING AUDIT - KATYUSTORE
+Nama: Firman Hadiyansyah
+NIM: 240102034
+
+Project ini adalah program KATYUSTORE Task 4 milik sendiri yang dilengkapi SEO Task 5.
+Desain HTML, CSS, dan JavaScript landing page tidak diganti.
+
+ISI DAN KEGUNAAN:
+- index.html: halaman landing page; canonical dibuat otomatis saat generate SEO.
+- robots.txt: aturan crawler (User-agent dan Allow) + lokasi sitemap.
+- sitemap.xml: daftar URL yang akan diindeks Google (hanya beranda).
+- generate-seo.cjs: mengisi URL asli otomatis ke tiga file tadi.
+- terima-kasih.html: tetap noindex, tidak dimasukkan ke sitemap.
+- netlify.toml: menjalankan generator saat deploy via Git ke Netlify.
+
+CARA A - NETLIFY MENGGUNAKAN GITHUB (PALING PRAKTIS)
+1. Upload seluruh isi folder katyustore-landing-page ke repository GitHub.
+2. Hubungkan repository tersebut ke Netlify untuk deploy dari Git.
+3. Netlify menjalankan otomatis 'node generate-seo.cjs' saat build,
+   dan menggunakan URL publik dari environment Netlify.
+4. Setelah website online, cek:
+   https://ALAMAT-SITUS-KAMU.netlify.app/robots.txt
+   https://ALAMAT-SITUS-KAMU.netlify.app/sitemap.xml
+5. Pastikan isi sitemap sudah menampilkan alamat domain asli kamu.
+
+CARA B - UPLOAD MANUAL NETLIFY ATAU GITHUB PAGES
+1. Pastikan Node.js terinstal dan buka terminal di folder katyustore-landing-page.
+2. Tentukan dahulu URL publik yang benar. Jalankan, misalnya:
+   node generate-seo.cjs https://NAMA-SITUS-ASLI.netlify.app
+   atau untuk GitHub Pages project:
+   node generate-seo.cjs https://USERNAME.github.io/NAMA-REPO/
+3. Ganti URL CONTOH di atas dengan domain sungguhan milik kamu.
+4. Upload ulang semua file dari folder ini agar sitemap dan robots ikut terkirim.
+5. Cek sitemap.xml dan robots.txt lewat browser sesuai URL publik.
+
+PERINGATAN UNTUK GITHUB PAGES:
+Pada alamat project seperti username.github.io/nama-repo/, robots.txt yang
+terletak di /nama-repo/robots.txt dapat dibuka, tetapi kebijakan robots resmi
+untuk host github.io dicari di /robots.txt milik host tersebut.
+Sitemap /nama-repo/sitemap.xml tetap bisa didaftarkan langsung di Search Console.
+Hosting domain sendiri/Netlify lebih mudah jika perlu mengelola robots.txt host.
+
+CARA VERIFIKASI GOOGLE SEARCH CONSOLE:
+1. Buka https://search.google.com/search-console
+2. Add property > pilih URL prefix > masukkan URL website yang benar.
+3. Pilih HTML file dan DOWNLOAD FILE VERIFIKASI RESMI DARI GOOGLE.
+4. Letakkan file bernama googleXXXXXXXXXXXX.html itu di folder yang sama
+   dengan index.html. Jangan mengubah isi atau nama file yang diberikan Google.
+5. Upload/deploy ulang website; pastikan file Google bisa dibuka lewat browser.
+6. Klik Verify di Google Search Console.
+7. Buka Sitemaps > submit sitemap.xml (sesuai path property).
+8. Foto/screenshot bukti kepemilikan verified dan hasil pendaftaran sitemap.
+
+PENTING:
+- File verifikasi Google asli harus berasal dari akun Search Console milik kamu.
+  Tidak disertakan karena belum ada token verifikasi dari Google.
+- Mengunggah sitemap.xml tidak otomatis memastikan halaman terindeks.
+- Jangan mengumpulkan screenshot simulasi sebagai bukti verifikasi sungguhan.
+- File sitemap.xml di paket ini adalah template dan WAJIB digenerate dahulu
+  agar tidak memakai alamat .invalid.
+
+UJI LOKAL:
+- Buka folder website di Visual Studio Code.
+- Jalankan Live Server untuk menguji tampilan.
+- Jalankan 'node generate-seo.cjs URL-ASLI' hanya setelah ada URL hosting.
+- Periksa Response Codes, Page Titles, Images (Alt), dan Canonical melalui
+  Screaming Frog SEO Spider setelah situs tersedia secara publik.

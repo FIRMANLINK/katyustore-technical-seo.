@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://firmantugas.netlify.app/">
+
+  <meta name="theme-color" content="#30485f">
+  <meta name="description" content="Jasa pembuatan dan pengaturan server Discord. Struktur channel, role, permission, dan integrasi bot yang sesuai kebutuhan komunitas atau bisnis.">
+  <meta name="color-scheme" content="light">
+  <title>KATYUSTORE — Jasa Setup Server Discord</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a href="#konten" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- 01 / NAVIGATION — mengikuti wireframe Figma -->
+  <header class="site-header" id="beranda">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Katyustore, kembali ke atas">KATYUSTORE</a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#fitur">Layanan</a>
+        <a href="#portofolio">Testimoni</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="button button--primary header-cta" href="#kontak">Hubungi Kami</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigasi mobile" hidden>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#fitur">Layanan</a>
+      <a href="#portofolio">Testimoni</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Hubungi Kami</a>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <!-- 02 / HERO -->
+    <section class="hero section--soft" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">LAYANAN PEMBUATAN SERVER DISCORD</p>
+          <h1 id="hero-title">Server Discord yang rapi, siap digunakan.</h1>
+          <p class="hero-description">Buat komunitas lebih mudah dikelola dengan struktur channel, role, dan bot yang disesuaikan dengan kebutuhan server kamu.</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#kontak">Konsultasi Sekarang</a>
+            <a class="button button--outline" href="#fitur">Lihat Layanan</a>
+          </div>
+          <p class="hero-note">Konsultasi kebutuhan awal tanpa biaya.</p>
+        </div>
+
+        <!-- Mockup UI dibuat dengan HTML/CSS agar ringan, bukan gambar -->
+        <div class="server-preview" aria-label="Ilustrasi struktur channel dan percakapan server Discord">
+          <div class="preview-toolbar">
+            <span class="preview-dot" aria-hidden="true"></span>
+            <span class="preview-dot" aria-hidden="true"></span>
+            <span class="preview-dot" aria-hidden="true"></span>
+            <span class="preview-caption">Preview struktur server</span>
+          </div>
+          <div class="preview-content">
+            <div class="preview-sidebar">
+              <span class="preview-sidebar-title">KOMUNITAS</span>
+              <span># &nbsp;informasi</span>
+              <span># &nbsp;general</span>
+              <span># &nbsp;perkenalan</span>
+              <span># &nbsp;media</span>
+              <span>◉ &nbsp;voice</span>
+            </div>
+            <div class="preview-chat">
+              <div class="preview-chat-title"># general</div>
+              <div class="preview-message"><span class="preview-avatar"></span><div><span class="skeleton skeleton--short"></span><span class="skeleton skeleton--medium"></span></div></div>
+              <div class="preview-message"><span class="preview-avatar"></span><div><span class="skeleton skeleton--short"></span><span class="skeleton skeleton--long"></span></div></div>
+              <div class="preview-message"><span class="preview-avatar"></span><div><span class="skeleton skeleton--short"></span><span class="skeleton skeleton--medium"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / VALUE PROPOSITION -->
+    <section class="section section--white" id="keunggulan" aria-labelledby="value-title">
+      <div class="container">
+        <p class="eyebrow">KENAPA MEMILIH LAYANAN INI?</p>
+        <h2 id="value-title">Server yang tertata, komunitas lebih nyaman.</h2>
+        <p class="section-intro">Setiap bagian dibuat agar member lebih mudah memahami dan menggunakan server.</p>
+        <div class="value-grid">
+          <article class="outlined-card value-card">
+            <span class="card-number">01</span>
+            <h3>Mudah dinavigasi</h3>
+            <p>Kategori, channel, dan informasi penting disusun agar tidak membingungkan member baru.</p>
+          </article>
+          <article class="outlined-card value-card">
+            <span class="card-number">02</span>
+            <h3>Pengelolaan lebih praktis</h3>
+            <p>Pembagian role, permission, dan automasi dasar memudahkan pekerjaan admin.</p>
+          </article>
+          <article class="outlined-card value-card">
+            <span class="card-number">03</span>
+            <h3>Sesuai kebutuhan</h3>
+            <p>Struktur server disesuaikan untuk komunitas, gaming, atau kebutuhan bisnis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / FEATURE LIST -->
+    <section class="section section--soft" id="fitur" aria-labelledby="features-title">
+      <div class="container">
+        <p class="eyebrow">FITUR UTAMA</p>
+        <h2 id="features-title">Yang bisa kamu dapatkan</h2>
+        <div class="feature-grid">
+          <div class="feature-column">
+            <article class="feature-item"><span class="check-icon" aria-hidden="true">✓</span><div><h3>Struktur channel</h3><p>Kategori dan channel sesuai tujuan server.</p></div></article>
+            <article class="feature-item"><span class="check-icon" aria-hidden="true">✓</span><div><h3>Role &amp; permission</h3><p>Akses member dan staff disusun sesuai kebutuhan.</p></div></article>
+            <article class="feature-item"><span class="check-icon" aria-hidden="true">✓</span><div><h3>Welcome &amp; rules</h3><p>Informasi awal bagi member baru lebih jelas.</p></div></article>
+          </div>
+          <div class="feature-column">
+            <article class="feature-item"><span class="check-icon" aria-hidden="true">✓</span><div><h3>Sistem ticket</h3><p>Tempat khusus untuk pertanyaan dan bantuan.</p></div></article>
+            <article class="feature-item"><span class="check-icon" aria-hidden="true">✓</span><div><h3>Integrasi bot</h3><p>Fitur otomatis untuk moderasi dan aktivitas.</p></div></article>
+            <article class="feature-item"><span class="check-icon" aria-hidden="true">✓</span><div><h3>Revisi setup</h3><p>Penyesuaian berdasarkan kesepakatan layanan.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 / SOCIAL PROOF. Konten masih contoh/placeholder, bukan testimoni asli. -->
+    <section class="section section--white" id="portofolio" aria-labelledby="proof-title">
+      <div class="container">
+        <p class="eyebrow">SOCIAL PROOF / PORTOFOLIO</p>
+        <h2 id="proof-title">Contoh pekerjaan dan ulasan klien</h2>
+        <p class="section-intro">Bagian ini disiapkan untuk menampilkan bukti hasil pekerjaan dan testimoni asli.</p>
+        <div class="portfolio-grid">
+          <article class="outlined-card portfolio-card">
+            <div class="portfolio-placeholder" role="img" aria-label="Placeholder gambar proyek 1"></div>
+            <h3>Proyek / Klien 01</h3>
+            <p>Preview hasil setup atau kutipan ulasan klien</p>
+          </article>
+          <article class="outlined-card portfolio-card">
+            <div class="portfolio-placeholder" role="img" aria-label="Placeholder gambar proyek 2"></div>
+            <h3>Proyek / Klien 02</h3>
+            <p>Preview hasil setup atau kutipan ulasan klien</p>
+          </article>
+          <article class="outlined-card portfolio-card">
+            <div class="portfolio-placeholder" role="img" aria-label="Placeholder gambar proyek 3"></div>
+            <h3>Proyek / Klien 03</h3>
+            <p>Preview hasil setup atau kutipan ulasan klien</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 / FAQ — native details: interaktif tanpa library -->
+    <section class="section section--soft" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <p class="eyebrow">PERTANYAAN UMUM</p>
+        <h2 id="faq-title">Hal yang sering ditanyakan</h2>
+        <div class="faq-list">
+          <details class="faq-item" open><summary>Apakah server bisa disesuaikan dengan tema saya?</summary><p>Ya, struktur channel dan role dirancang berdasarkan kebutuhan dan tema yang disepakati.</p></details>
+          <details class="faq-item" open><summary>Apakah bisa menggunakan server yang sudah ada?</summary><p>Bisa. Pengaturan lama dapat dirapikan atau diperbarui sesuai kebutuhan.</p></details>
+          <details class="faq-item" open><summary>Berapa lama proses pembuatannya?</summary><p>Estimasi pengerjaan mengikuti paket dan tingkat kerumitan yang dipilih.</p></details>
+          <details class="faq-item" open><summary>Bagaimana cara memulai pemesanan?</summary><p>Hubungi kami dan jelaskan konsep server yang ingin dibuat.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 / FINAL CTA + formulir kontak/pembelian sesuai Task 4 -->
+    <section class="section section--cta" id="kontak" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">MULAI DARI SINI</p>
+        <h2 id="contact-title">Punya konsep server yang ingin dibuat?</h2>
+        <p class="section-intro">Ceritakan kebutuhanmu, lalu pilih layanan yang sesuai.</p>
+        <a class="button button--primary contact-cta" href="#formulir">Konsultasi Sekarang</a>
+        <div class="contact-layout" id="formulir">
+          <div class="contact-explanation">
+            <h3>Formulir konsultasi / pemesanan</h3>
+            <p>Isi informasi dasar berikut supaya kebutuhan server bisa dibahas lebih lanjut.</p>
+            <p class="contact-helper">Formulir ini untuk konsultasi dan permintaan pemesanan, bukan pembayaran otomatis.</p>
+          </div>
+          <form class="contact-form" id="contact-form" name="kontak-katyustore" method="POST" action="/terima-kasih.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="kontak-katyustore">
+            <p class="honeypot"><label>Jangan diisi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div class="field-row">
+              <div class="field"><label for="nama">Nama <span aria-hidden="true">*</span></label><input type="text" id="nama" name="nama" placeholder="Nama kamu" autocomplete="name" maxlength="90" required></div>
+              <div class="field"><label for="whatsapp">Nomor WhatsApp <span aria-hidden="true">*</span></label><input type="tel" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx" autocomplete="tel" inputmode="tel" minlength="9" maxlength="20" pattern="[+0-9]{9,20}" title="Isi 9–20 angka, boleh diawali +" required></div>
+            </div>
+            <div class="field"><label for="layanan">Kebutuhan layanan <span aria-hidden="true">*</span></label><select id="layanan" name="layanan" required><option value="" disabled selected>Pilih layanan</option><option value="Setup server baru">Setup server baru</option><option value="Remake server yang sudah ada">Remake server yang sudah ada</option><option value="Konsultasi fitur bot">Konsultasi fitur bot</option><option value="Lainnya">Lainnya</option></select></div>
+            <div class="field"><label for="pesan">Deskripsi kebutuhan <span aria-hidden="true">*</span></label><textarea id="pesan" name="pesan" rows="4" minlength="10" maxlength="1500" placeholder="Contoh: Saya ingin server komunitas gaming dengan channel, role, dan sistem ticket." required></textarea></div>
+            <div class="checkbox-row"><input type="checkbox" id="persetujuan" name="persetujuan" value="Setuju dihubungi" required><label for="persetujuan">Saya setuju untuk dihubungi terkait permintaan ini.</label></div>
+            <button class="button button--primary button--submit" type="submit">Kirim Permintaan <span aria-hidden="true">→</span></button>
+            <p class="form-note">Kolom bertanda * wajib diisi.</p>
+            <div id="form-feedback" class="form-feedback" role="status" aria-live="polite" hidden></div>
+            <button id="copy-request" class="button button--outline copy-button" type="button" hidden>Salin pesan permintaan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 08 / FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand brand--footer" href="#beranda">KATYUSTORE</a>
+      <p>Jasa pembuatan dan pengaturan server Discord</p>
+    </div>
+  </footer>
+</body>
+</html>
